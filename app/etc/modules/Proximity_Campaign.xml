@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Proximity_Campaign>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Proximity_Campaign>
+    </modules>
+</config>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <client module="client">
+            <sort_order>100</sort_order>
+            <children>
+                <campaignbackend module="campaign">
+                    <title>Manage Campaign</title>
+                    <sort_order>0</sort_order>
+                    <action>admin_campaign/adminhtml_campaignbackend</action>
+                </campaignbackend>
+            </children>
+        </client>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <campaign translate="title" module="campaign">
+                        <title>Campaign</title>
+                        <sort_order>1000</sort_order>
+                        <children>
+                            <campaignbackend translate="title">
+                                <title>Backend Page Title</title>
+                            </campaignbackend>
+                        </children>
+                    </campaign>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
